@@ -1,0 +1,22 @@
+.searchBox {
+    background: white;
+    border: 1px solid gray;
+    height: 75px;
+}
+
+.logoIMG {
+    height: 90px;
+}
+
+.imageBox {
+    height: 55px;
+}
+
+.navSection {
+    display: flex;
+}
+
+.nav {
+    width: 25px;
+    height: 25px;
+}
