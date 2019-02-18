@@ -1,12 +1,15 @@
 import React from 'react';
 import './SearchBar.css';
-import logo from '../SearchBar/';
+import logo from '../../assets/logo.png';
+import compass from '../../assets/compass.svg';
+import heart from '../../assets/heart.svg';
+import userIcon from '../../assets/userIcon.svg';
 
 const SearchBar = () => {
 return (
     <div className="searchBox">
         <div className="imageBox">
-            <img src={logo} className='logoImg'/>  {/*logo*/}
+            <img src={logo} className='logoImg' alt='logo'/>  {/*logo*/}
         </div>
 
     <div>
@@ -15,13 +18,13 @@ return (
 
         <div className="navSection">
             <div className="nav">
-                <div>COMPASS GOES HERE</div>
+                <img src={compass} className="compassIcon" alt="compass"/>
             </div>
             <div className="nav">
-                <div>HEART GOES HERE</div>
+                <img src={heart} className='heart' alt='heart'/>
             </div>   
             <div className="nav">
-                <div>CIRCLE GOES HERE</div>
+                <img src={userIcon} alt='userIcon'/>
             </div> 
         </div>
     </div>
