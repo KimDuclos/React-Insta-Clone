@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 // form to accept comment from user - props not used yet.
 const CommentInput = props => {
   return (

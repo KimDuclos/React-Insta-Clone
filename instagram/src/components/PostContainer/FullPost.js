@@ -1,5 +1,5 @@
 import React from 'react';
-import CommentSection from '../CommentsSection/CommentsSection';
+import CommentsSection from '../CommentsSection/CommentsSection';
 import Header from './Header';
 import './PostContainer.css';
 
@@ -25,7 +25,7 @@ const FullPost = props => {
         />
       </div>
       {/* compenent that gets comments from dummy data */}
-      <CommentSection comments={props.post.comments} />
+      <CommentsSection comments={props.post.comments} />
     </div>
   );
 };
