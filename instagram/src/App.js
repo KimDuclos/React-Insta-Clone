@@ -13,13 +13,22 @@ class App extends Component {
     };
   }
 
+  // set data to component's state
+  componentDidMount() {
+    this.setState({post: dummyData});
+  }
+
   
   render() {
     return (
       <div className="App">
+      post={this.state}
         {/* call components */}
         <SearchBar />
-        <PostContainer post={this.state.post} />
+        {/* use state object to pass data to PostContainer component */}
+        <PostContainer post={
+           this.state.post 
+        } />
       </div>
     );
   }
