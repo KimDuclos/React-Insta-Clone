@@ -12,6 +12,7 @@
 .userName {
   font-weight: bold;
   font-size: 12px;
+  padding: 0 1% 0 0;
 }
 
 /* CommentInput */

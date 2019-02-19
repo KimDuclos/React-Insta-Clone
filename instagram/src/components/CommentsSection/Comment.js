@@ -7,7 +7,7 @@ const Comments = props => {
   return (
     <div className="commentText">
       {/* username of comments already posted from dummy text*/}
-      <span className="userName">{props.comment.username}</span>
+      <span className="userName"> {props.comment.username}</span>
       {/* comments that were previously posted from dummy text */}
       <span className="commentOutput">{props.comment.text}</span>{' '}
     </div>
