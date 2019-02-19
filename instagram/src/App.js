@@ -1,28 +1,27 @@
-import React, { Component } from 'react';
-import SearchBar from './components/SearchBar/SearchBar';
-import PostContainer from './components/PostContainer/PostContainer';
-// import CommentsSection from './CommentsSection';
-// import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
 import dummyData from './dummy-data';
-
+import PostContainer from './components/PostContainer/PostContainer';
+import SearchBar from './components/SearchBar/SearchBar';
 
 class App extends Component {
   constructor() {
     super();
+    // set state, create property for data file
     this.state = {
-      posts: dummyData
+      post: dummyData  
     };
   }
 
+  
   render() {
     return (
-      <div className='App'>
-          <SearchBar/>
-          <PostContainer/>
-          {/* <CommentsSection/> */}
+      <div className="App">
+        {/* call components */}
+        <SearchBar />
+        <PostContainer post={this.state.post} />
       </div>
-    )
+    );
   }
 }
 

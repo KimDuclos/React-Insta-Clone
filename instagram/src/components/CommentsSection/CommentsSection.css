@@ -1,13 +1,23 @@
-.commentInput {
-    text-align: left;
+.commentOutput {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 1% 1% 0 0;
 }
 
-.coment {
-    font-size: 12px;
-    color: black;
+.commentText {
+  display: flex;
+  margin: 1% 0 0 1%;
 }
 
 .userName {
-    font-size: 12px;
-    color: black;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* CommentInput */
+.commentBox {
+  width: 99.2%;
+  border: none;
+  margin: 4% 0 4% 1%;
+  border-right: 1px solid lightgray;
 }

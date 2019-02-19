@@ -1,13 +1,16 @@
 import React from 'react';
+import Post from './FullPost';
 import './PostContainer.css';
 
 const PostContainer = props => {
-return (
-    <div className="postBox">
-        <div>POST ARRAY WILL GO HERE</div>
+  return (
+    // map through dummy data to return array
+    <div className="postContainer">
+      {props.post.map(p => 
+      // component thats gets info from dummy data
+      <Post key={p.imgLink} post={p} />)}
     </div>
-)};
-    
-    
+  );
+};
 
 export default PostContainer;

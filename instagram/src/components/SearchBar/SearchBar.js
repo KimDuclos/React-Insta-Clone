@@ -1,33 +1,45 @@
 import React from 'react';
-import './SearchBar.css';
 import logo from '../../assets/logo.png';
-import compass from '../../assets/compass.svg';
-import heart from '../../assets/heart.svg';
-import userIcon from '../../assets/userIcon.svg';
+import './SearchBar.css';
 
 const SearchBar = () => {
-return (
-    <div className="searchBox">
-        <div className="imageBox">
-            <img src={logo} className='logoImg' alt='logo'/>  {/*logo*/}
+  return (
+    <div className="topHeader">
+
+      {/* box to hold logo, search box, nav icons */}
+      <div className="imgBox">
+        <i className="fab fa-instagram fa-2x"></i>
+        <p className="line">|</p>
+        <img src={logo} className="logo" alt="logo"/>
+      </div>
+
+      {/* search box with placehold and icon placeholder */}
+      <div className="searchContainer">
+        <input type="text" placeholder="Search" className="searchBox"/>
+        <i className="fa fa-search" aria-hidden="true"></i>
+      </div>
+
+      {/* navigation icon container */}
+      <div className="nav">
+
+        {/* compass icon */}
+        <div className="navIcons">
+          <i className="fa fa-compass fa-2x" />
         </div>
 
-    <div>
-        <input type="text" placeholder="search"/> {/*search box*/}
-    </div>
-
-        <div className="navSection">
-            <div className="nav">
-                <img src={compass} className="compassIcon" alt="compass"/>
-            </div>
-            <div className="nav">
-                <img src={heart} className='heart' alt='heart'/>
-            </div>   
-            <div className="nav">
-                <img src={userIcon} alt='userIcon'/>
-            </div> 
+        {/* heart icon */}
+        <div className="navIcons">
+          <i className="fa fa-heart fa-2x" />
         </div>
+
+        {/* user circle icon */}
+        <div className="navIcons">
+          <i className="fa fa-user-circle fa-2x" />
+        </div>
+
+      </div>
     </div>
-)};
+  );
+};
 
 export default SearchBar;
