@@ -7,17 +7,16 @@ const Comments = props => {
   return (
     <div className="commentText">
       {/* username of comments already posted from dummy text*/}
-      <span className="userName"> {props.comment.username}</span>
+      <div className="userName"> {props.comment.username}</div>
       {/* comments that were previously posted from dummy text */}
-      <span className="commentOutput">{props.comment.text}</span>{' '}
+      <div className="commentOutput">{props.comment.text}</div>{' '}
     </div>
   );
 };
 
 Comment.propTypes = {
-   //confirms comment structure is correct
   comment: PropTypes.shape({
-    //confirm comment text is a string
+    // check if comment and username are strings
     text: PropTypes.string,
     username: PropTypes.string
   })
