@@ -3,6 +3,7 @@ import './App.css';
 import dummyData from './dummy-data';
 import PostContainer from './components/PostContainer/PostContainer';
 import SearchBar from './components/SearchBar/SearchBar';
+// import withAuthenticate from './authentication/withAuthenticate';
 
 class App extends Component {
   constructor() {

@@ -10,12 +10,12 @@ const Likes = props => {
 
       {/* icon to like a post */}
       <div className="likeHeartIcon"> 
-        <i className="far fa-heart" />
+        <i className="far fa-heart fa-2x" />
       </div>
 
       {/* icon to add a comment to the post */}
       <div className="commentIcon">
-        <i className="far fa-comment" />
+        <i className="far fa-comment fa-2x" />
       </div>
 
     </div>,

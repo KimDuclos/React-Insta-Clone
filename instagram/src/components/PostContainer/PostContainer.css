@@ -29,3 +29,17 @@
   .userName {
     margin: 1% 0 0 0;
   }
+
+  .socialIconContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .likeHeartIcon {
+    width: 30px;
+  }
+
+  .commentIcon {
+    width: 30px;
+  }
