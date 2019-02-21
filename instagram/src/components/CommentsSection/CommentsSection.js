@@ -42,7 +42,7 @@ class CommentsSection extends React.Component {
   };
 
 
-  newCommentHandler = e => {
+  newCommHandler = e => {
     e.preventDefault();  // prevent auto refresh after entering new comment
 
       // set state for new comment
@@ -66,7 +66,7 @@ class CommentsSection extends React.Component {
         {/* map over comments from dummy data to return array for each post */}
         {this.state.comments.map((x, y) => 
         <Comment key={y} comment={x}/>)}
-        <CommentInput submitComment={this.newCommentHandler} />
+        <CommentInput submitComment={this.newCommHandler} />
       </div>
     );
   }
