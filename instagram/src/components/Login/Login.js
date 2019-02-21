@@ -17,14 +17,17 @@ class Login extends Component {
 
   handleLoginSubmit = e => {
     const user = this.state.username;
-    localStorage.setItem('user', userN);
+    localStorage.setItem('user-name', user-name);
   };
 
   render() {
     return (
+      // login form for username and password
       <Form className="form">
-        <Input type="text" name="userName" placeholder="userName" value={this.state.userName} onChange={this.newInput}/>
-        <Input type="password"  name="password" placeholder="Password" value={this.state.password} onChange={this.newInput}/>
+         {/* calls credential input component for username and sets value to user input */}
+        <Input type="text" className="userName" placeholder="Userame" value={this.state.userName} onChange={this.newInput}/>
+         {/* calls credential input component for password and sets value to user input */}
+        <Input type="text"  className="password" placeholder="Password" value={this.state.password} onChange={this.newInput}/>
         <Button onClick={this.submitCreds}>Log In</Button>
       </Form>
     );

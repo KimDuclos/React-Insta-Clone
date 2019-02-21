@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './CommentsSection.css';
+import Header from '../PostContainer/Header';
 
 // gets comment data from dummy text
 const Comments = props => {
   return (
     <div className="commentText">
-      {/* username of comments already posted from dummy text*/}
+      {/* username in new comment*/}
       <div className="userName"> {props.comment.username}</div>
-      {/* comments that were previously posted from dummy text */}
-      <div className="commentOutput">{props.comment.text}</div>{' '}
+      {/* add comment following username */}
+      <div className="commentOutput">{props.comment.text}</div>
     </div>
   );
 };
